@@ -31,7 +31,7 @@ def sort(width_cm: float, height_cm: float, length_cm: float, mass_kg: float) ->
         raise ValueError("All dimensions and mass must be numbers")
 
     if width_cm <= 0 or height_cm <= 0 or length_cm <= 0 or mass_kg <= 0:
-        raise ValueError("Dimensions and mass must be positive")
+        raise ValueError("Dimensions and mass must be greater than zero")
 
     # Calculate volume
     volume = width_cm * height_cm * length_cm
